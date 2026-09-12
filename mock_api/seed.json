@@ -1,0 +1,1543 @@
+{
+ "products": [
+  {
+   "sku": "KB-01",
+   "name": "Mechanical Keyboard",
+   "unit_price": 89.0
+  },
+  {
+   "sku": "MS-02",
+   "name": "Wireless Mouse",
+   "unit_price": 35.0
+  },
+  {
+   "sku": "MN-03",
+   "name": "27in Monitor",
+   "unit_price": 249.0
+  },
+  {
+   "sku": "HS-04",
+   "name": "USB Headset",
+   "unit_price": 59.0
+  },
+  {
+   "sku": "DK-05",
+   "name": "USB-C Dock",
+   "unit_price": 129.0
+  },
+  {
+   "sku": "CB-06",
+   "name": "HDMI Cable 2m",
+   "unit_price": 12.0
+  }
+ ],
+ "customers": [
+  {
+   "id": 1,
+   "name": "Alice Chen",
+   "email": "alice@example.com"
+  },
+  {
+   "id": 2,
+   "name": "Bob Lin",
+   "email": "bob@example.com"
+  },
+  {
+   "id": 3,
+   "name": "Carol Wang",
+   "email": "carol@example.com"
+  },
+  {
+   "id": 4,
+   "name": "Dave Huang",
+   "email": "dave@example.com"
+  },
+  {
+   "id": 5,
+   "name": "Eve Liu",
+   "email": "eve@example.com"
+  },
+  {
+   "id": 6,
+   "name": "Frank Wu",
+   "email": "frank@example.com"
+  },
+  {
+   "id": 7,
+   "name": "Grace Tsai",
+   "email": "grace@example.com"
+  },
+  {
+   "id": 8,
+   "name": "Henry Yang",
+   "email": "henry@example.com"
+  }
+ ],
+ "orders": [
+  {
+   "id": 1001,
+   "customer_id": 2,
+   "status": "cancelled",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 1,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 1,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 350.0,
+   "created_at": "2026-02-28T10:00:00Z"
+  },
+  {
+   "id": 1002,
+   "customer_id": 4,
+   "status": "cancelled",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 1,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 101.0,
+   "created_at": "2026-01-27T10:00:00Z"
+  },
+  {
+   "id": 1003,
+   "customer_id": 7,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 3,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 36.0,
+   "created_at": "2026-08-28T10:00:00Z"
+  },
+  {
+   "id": 1004,
+   "customer_id": 6,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 3,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 2,
+     "unit_price": 35.0
+    }
+   ],
+   "total": 337.0,
+   "created_at": "2026-03-16T10:00:00Z"
+  },
+  {
+   "id": 1005,
+   "customer_id": 6,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 2,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 1,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 190.0,
+   "created_at": "2026-05-11T10:00:00Z"
+  },
+  {
+   "id": 1006,
+   "customer_id": 5,
+   "status": "cancelled",
+   "items": [
+    {
+     "sku": "HS-04",
+     "qty": 2,
+     "unit_price": 59.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 1,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "KB-01",
+     "qty": 3,
+     "unit_price": 89.0
+    }
+   ],
+   "total": 514.0,
+   "created_at": "2026-06-28T10:00:00Z"
+  },
+  {
+   "id": 1007,
+   "customer_id": 1,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 1,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 12.0,
+   "created_at": "2026-05-12T10:00:00Z"
+  },
+  {
+   "id": 1008,
+   "customer_id": 5,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 2,
+     "unit_price": 89.0
+    }
+   ],
+   "total": 178.0,
+   "created_at": "2026-06-15T10:00:00Z"
+  },
+  {
+   "id": 1009,
+   "customer_id": 2,
+   "status": "cancelled",
+   "items": [
+    {
+     "sku": "MN-03",
+     "qty": 3,
+     "unit_price": 249.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 2,
+     "unit_price": 35.0
+    }
+   ],
+   "total": 817.0,
+   "created_at": "2026-03-27T10:00:00Z"
+  },
+  {
+   "id": 1010,
+   "customer_id": 4,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "MS-02",
+     "qty": 2,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 2,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 3,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 271.0,
+   "created_at": "2026-01-17T10:00:00Z"
+  },
+  {
+   "id": 1011,
+   "customer_id": 5,
+   "status": "pending",
+   "items": [
+    {
+     "sku": "MN-03",
+     "qty": 2,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 498.0,
+   "created_at": "2026-04-28T10:00:00Z"
+  },
+  {
+   "id": 1012,
+   "customer_id": 3,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "MN-03",
+     "qty": 2,
+     "unit_price": 249.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 3,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 2,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 721.0,
+   "created_at": "2026-03-17T10:00:00Z"
+  },
+  {
+   "id": 1013,
+   "customer_id": 7,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 3,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 2,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 921.0,
+   "created_at": "2026-04-14T10:00:00Z"
+  },
+  {
+   "id": 1014,
+   "customer_id": 3,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "HS-04",
+     "qty": 1,
+     "unit_price": 59.0
+    },
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    }
+   ],
+   "total": 535.0,
+   "created_at": "2026-02-22T10:00:00Z"
+  },
+  {
+   "id": 1015,
+   "customer_id": 1,
+   "status": "pending",
+   "items": [
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 2,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 505.0,
+   "created_at": "2026-05-20T10:00:00Z"
+  },
+  {
+   "id": 1016,
+   "customer_id": 3,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "MN-03",
+     "qty": 2,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 498.0,
+   "created_at": "2026-01-18T10:00:00Z"
+  },
+  {
+   "id": 1017,
+   "customer_id": 4,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "MS-02",
+     "qty": 3,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 2,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "KB-01",
+     "qty": 3,
+     "unit_price": 89.0
+    }
+   ],
+   "total": 630.0,
+   "created_at": "2026-06-15T10:00:00Z"
+  },
+  {
+   "id": 1018,
+   "customer_id": 6,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "DK-05",
+     "qty": 2,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 1,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 596.0,
+   "created_at": "2026-04-11T10:00:00Z"
+  },
+  {
+   "id": 1019,
+   "customer_id": 2,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "DK-05",
+     "qty": 1,
+     "unit_price": 129.0
+    }
+   ],
+   "total": 129.0,
+   "created_at": "2026-02-27T10:00:00Z"
+  },
+  {
+   "id": 1020,
+   "customer_id": 8,
+   "status": "cancelled",
+   "items": [
+    {
+     "sku": "MS-02",
+     "qty": 3,
+     "unit_price": 35.0
+    }
+   ],
+   "total": 105.0,
+   "created_at": "2026-03-18T10:00:00Z"
+  },
+  {
+   "id": 1021,
+   "customer_id": 4,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 3,
+     "unit_price": 59.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 3,
+     "unit_price": 35.0
+    }
+   ],
+   "total": 669.0,
+   "created_at": "2026-07-21T10:00:00Z"
+  },
+  {
+   "id": 1022,
+   "customer_id": 4,
+   "status": "pending",
+   "items": [
+    {
+     "sku": "DK-05",
+     "qty": 1,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 1,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 188.0,
+   "created_at": "2026-06-10T10:00:00Z"
+  },
+  {
+   "id": 1023,
+   "customer_id": 1,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "DK-05",
+     "qty": 1,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 1,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 3,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 200.0,
+   "created_at": "2026-02-11T10:00:00Z"
+  },
+  {
+   "id": 1024,
+   "customer_id": 8,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 2,
+     "unit_price": 129.0
+    }
+   ],
+   "total": 347.0,
+   "created_at": "2026-03-28T10:00:00Z"
+  },
+  {
+   "id": 1025,
+   "customer_id": 2,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "HS-04",
+     "qty": 2,
+     "unit_price": 59.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 1,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 1,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 165.0,
+   "created_at": "2026-06-23T10:00:00Z"
+  },
+  {
+   "id": 1026,
+   "customer_id": 2,
+   "status": "pending",
+   "items": [
+    {
+     "sku": "HS-04",
+     "qty": 3,
+     "unit_price": 59.0
+    },
+    {
+     "sku": "KB-01",
+     "qty": 3,
+     "unit_price": 89.0
+    }
+   ],
+   "total": 444.0,
+   "created_at": "2026-07-20T10:00:00Z"
+  },
+  {
+   "id": 1027,
+   "customer_id": 4,
+   "status": "cancelled",
+   "items": [
+    {
+     "sku": "MS-02",
+     "qty": 1,
+     "unit_price": 35.0
+    }
+   ],
+   "total": 35.0,
+   "created_at": "2026-08-14T10:00:00Z"
+  },
+  {
+   "id": 1028,
+   "customer_id": 2,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "MS-02",
+     "qty": 2,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 1,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 319.0,
+   "created_at": "2026-02-11T10:00:00Z"
+  },
+  {
+   "id": 1029,
+   "customer_id": 8,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "DK-05",
+     "qty": 1,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 2,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 242.0,
+   "created_at": "2026-04-22T10:00:00Z"
+  },
+  {
+   "id": 1030,
+   "customer_id": 1,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "MS-02",
+     "qty": 2,
+     "unit_price": 35.0
+    }
+   ],
+   "total": 70.0,
+   "created_at": "2026-05-24T10:00:00Z"
+  },
+  {
+   "id": 1031,
+   "customer_id": 8,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "HS-04",
+     "qty": 3,
+     "unit_price": 59.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    }
+   ],
+   "total": 564.0,
+   "created_at": "2026-04-19T10:00:00Z"
+  },
+  {
+   "id": 1032,
+   "customer_id": 1,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 3,
+     "unit_price": 89.0
+    }
+   ],
+   "total": 267.0,
+   "created_at": "2026-01-11T10:00:00Z"
+  },
+  {
+   "id": 1033,
+   "customer_id": 3,
+   "status": "pending",
+   "items": [
+    {
+     "sku": "HS-04",
+     "qty": 1,
+     "unit_price": 59.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 1,
+     "unit_price": 35.0
+    }
+   ],
+   "total": 481.0,
+   "created_at": "2026-02-17T10:00:00Z"
+  },
+  {
+   "id": 1034,
+   "customer_id": 1,
+   "status": "cancelled",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    }
+   ],
+   "total": 476.0,
+   "created_at": "2026-02-23T10:00:00Z"
+  },
+  {
+   "id": 1035,
+   "customer_id": 6,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "DK-05",
+     "qty": 2,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 1,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 3,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 1017.0,
+   "created_at": "2026-05-22T10:00:00Z"
+  },
+  {
+   "id": 1036,
+   "customer_id": 5,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 3,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 36.0,
+   "created_at": "2026-06-12T10:00:00Z"
+  },
+  {
+   "id": 1037,
+   "customer_id": 2,
+   "status": "pending",
+   "items": [
+    {
+     "sku": "HS-04",
+     "qty": 3,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 177.0,
+   "created_at": "2026-04-26T10:00:00Z"
+  },
+  {
+   "id": 1038,
+   "customer_id": 6,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "MS-02",
+     "qty": 1,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 1,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 284.0,
+   "created_at": "2026-03-24T10:00:00Z"
+  },
+  {
+   "id": 1039,
+   "customer_id": 2,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 3,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 3,
+     "unit_price": 249.0
+    },
+    {
+     "sku": "KB-01",
+     "qty": 2,
+     "unit_price": 89.0
+    }
+   ],
+   "total": 961.0,
+   "created_at": "2026-05-13T10:00:00Z"
+  },
+  {
+   "id": 1040,
+   "customer_id": 3,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 3,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 36.0,
+   "created_at": "2026-05-16T10:00:00Z"
+  },
+  {
+   "id": 1041,
+   "customer_id": 1,
+   "status": "pending",
+   "items": [
+    {
+     "sku": "MN-03",
+     "qty": 3,
+     "unit_price": 249.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 2,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 2,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 841.0,
+   "created_at": "2026-07-18T10:00:00Z"
+  },
+  {
+   "id": 1042,
+   "customer_id": 3,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 2,
+     "unit_price": 89.0
+    }
+   ],
+   "total": 178.0,
+   "created_at": "2026-03-24T10:00:00Z"
+  },
+  {
+   "id": 1043,
+   "customer_id": 3,
+   "status": "cancelled",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 1,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 1,
+     "unit_price": 59.0
+    },
+    {
+     "sku": "KB-01",
+     "qty": 3,
+     "unit_price": 89.0
+    }
+   ],
+   "total": 338.0,
+   "created_at": "2026-01-21T10:00:00Z"
+  },
+  {
+   "id": 1044,
+   "customer_id": 6,
+   "status": "pending",
+   "items": [
+    {
+     "sku": "DK-05",
+     "qty": 1,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 1,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 2,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 282.0,
+   "created_at": "2026-06-16T10:00:00Z"
+  },
+  {
+   "id": 1045,
+   "customer_id": 3,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "MS-02",
+     "qty": 3,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "KB-01",
+     "qty": 2,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 3,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 1030.0,
+   "created_at": "2026-03-15T10:00:00Z"
+  },
+  {
+   "id": 1046,
+   "customer_id": 7,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 3,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 2,
+     "unit_price": 35.0
+    }
+   ],
+   "total": 337.0,
+   "created_at": "2026-05-15T10:00:00Z"
+  },
+  {
+   "id": 1047,
+   "customer_id": 8,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 2,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 1,
+     "unit_price": 59.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 1,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 249.0,
+   "created_at": "2026-05-17T10:00:00Z"
+  },
+  {
+   "id": 1048,
+   "customer_id": 4,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 3,
+     "unit_price": 89.0
+    }
+   ],
+   "total": 267.0,
+   "created_at": "2026-06-18T10:00:00Z"
+  },
+  {
+   "id": 1049,
+   "customer_id": 7,
+   "status": "cancelled",
+   "items": [
+    {
+     "sku": "MN-03",
+     "qty": 2,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 498.0,
+   "created_at": "2026-06-10T10:00:00Z"
+  },
+  {
+   "id": 1050,
+   "customer_id": 5,
+   "status": "pending",
+   "items": [
+    {
+     "sku": "MN-03",
+     "qty": 1,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 249.0,
+   "created_at": "2026-02-23T10:00:00Z"
+  },
+  {
+   "id": 1051,
+   "customer_id": 2,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 2,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 3,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 771.0,
+   "created_at": "2026-04-18T10:00:00Z"
+  },
+  {
+   "id": 1052,
+   "customer_id": 1,
+   "status": "cancelled",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 2,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 24.0,
+   "created_at": "2026-04-21T10:00:00Z"
+  },
+  {
+   "id": 1053,
+   "customer_id": 2,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 3,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 2,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 765.0,
+   "created_at": "2026-05-23T10:00:00Z"
+  },
+  {
+   "id": 1054,
+   "customer_id": 4,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "HS-04",
+     "qty": 3,
+     "unit_price": 59.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 1,
+     "unit_price": 249.0
+    }
+   ],
+   "total": 426.0,
+   "created_at": "2026-07-15T10:00:00Z"
+  },
+  {
+   "id": 1055,
+   "customer_id": 5,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 1,
+     "unit_price": 249.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 2,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 754.0,
+   "created_at": "2026-07-28T10:00:00Z"
+  },
+  {
+   "id": 1056,
+   "customer_id": 4,
+   "status": "cancelled",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 2,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 2,
+     "unit_price": 249.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 3,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 699.0,
+   "created_at": "2026-08-15T10:00:00Z"
+  },
+  {
+   "id": 1057,
+   "customer_id": 5,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "MN-03",
+     "qty": 1,
+     "unit_price": 249.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    }
+   ],
+   "total": 725.0,
+   "created_at": "2026-04-14T10:00:00Z"
+  },
+  {
+   "id": 1058,
+   "customer_id": 8,
+   "status": "cancelled",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    }
+   ],
+   "total": 89.0,
+   "created_at": "2026-02-24T10:00:00Z"
+  },
+  {
+   "id": 1059,
+   "customer_id": 7,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 1,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    }
+   ],
+   "total": 399.0,
+   "created_at": "2026-07-17T10:00:00Z"
+  },
+  {
+   "id": 1060,
+   "customer_id": 1,
+   "status": "pending",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 3,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 36.0,
+   "created_at": "2026-07-17T10:00:00Z"
+  },
+  {
+   "id": 1061,
+   "customer_id": 8,
+   "status": "pending",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 3,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 36.0,
+   "created_at": "2026-04-13T10:00:00Z"
+  },
+  {
+   "id": 1062,
+   "customer_id": 6,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "MS-02",
+     "qty": 3,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 3,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 282.0,
+   "created_at": "2026-07-27T10:00:00Z"
+  },
+  {
+   "id": 1063,
+   "customer_id": 4,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "MS-02",
+     "qty": 2,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 2,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 188.0,
+   "created_at": "2026-08-17T10:00:00Z"
+  },
+  {
+   "id": 1064,
+   "customer_id": 4,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "HS-04",
+     "qty": 3,
+     "unit_price": 59.0
+    },
+    {
+     "sku": "KB-01",
+     "qty": 2,
+     "unit_price": 89.0
+    }
+   ],
+   "total": 355.0,
+   "created_at": "2026-06-20T10:00:00Z"
+  },
+  {
+   "id": 1065,
+   "customer_id": 3,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 2,
+     "unit_price": 35.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    }
+   ],
+   "total": 546.0,
+   "created_at": "2026-02-23T10:00:00Z"
+  },
+  {
+   "id": 1066,
+   "customer_id": 1,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "MN-03",
+     "qty": 2,
+     "unit_price": 249.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 2,
+     "unit_price": 129.0
+    }
+   ],
+   "total": 756.0,
+   "created_at": "2026-07-22T10:00:00Z"
+  },
+  {
+   "id": 1067,
+   "customer_id": 5,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 2,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 2,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 231.0,
+   "created_at": "2026-07-27T10:00:00Z"
+  },
+  {
+   "id": 1068,
+   "customer_id": 7,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 2,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 1,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 2,
+     "unit_price": 35.0
+    }
+   ],
+   "total": 223.0,
+   "created_at": "2026-01-22T10:00:00Z"
+  },
+  {
+   "id": 1069,
+   "customer_id": 8,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "CB-06",
+     "qty": 3,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 1,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 95.0,
+   "created_at": "2026-01-22T10:00:00Z"
+  },
+  {
+   "id": 1070,
+   "customer_id": 8,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "KB-01",
+     "qty": 2,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 1,
+     "unit_price": 12.0
+    }
+   ],
+   "total": 577.0,
+   "created_at": "2026-01-18T10:00:00Z"
+  },
+  {
+   "id": 1071,
+   "customer_id": 6,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "MN-03",
+     "qty": 2,
+     "unit_price": 249.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 2,
+     "unit_price": 35.0
+    }
+   ],
+   "total": 568.0,
+   "created_at": "2026-05-23T10:00:00Z"
+  },
+  {
+   "id": 1072,
+   "customer_id": 1,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "HS-04",
+     "qty": 3,
+     "unit_price": 59.0
+    }
+   ],
+   "total": 266.0,
+   "created_at": "2026-04-12T10:00:00Z"
+  },
+  {
+   "id": 1073,
+   "customer_id": 3,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "CB-06",
+     "qty": 1,
+     "unit_price": 12.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 3,
+     "unit_price": 35.0
+    }
+   ],
+   "total": 206.0,
+   "created_at": "2026-03-25T10:00:00Z"
+  },
+  {
+   "id": 1074,
+   "customer_id": 6,
+   "status": "paid",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 2,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 3,
+     "unit_price": 129.0
+    },
+    {
+     "sku": "MS-02",
+     "qty": 2,
+     "unit_price": 35.0
+    }
+   ],
+   "total": 635.0,
+   "created_at": "2026-02-15T10:00:00Z"
+  },
+  {
+   "id": 1075,
+   "customer_id": 7,
+   "status": "shipped",
+   "items": [
+    {
+     "sku": "KB-01",
+     "qty": 1,
+     "unit_price": 89.0
+    },
+    {
+     "sku": "DK-05",
+     "qty": 2,
+     "unit_price": 129.0
+    }
+   ],
+   "total": 347.0,
+   "created_at": "2026-04-12T10:00:00Z"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+[project]
+name = "mcp-vs-prompt-bench"
+version = "0.1.0"
+description = "Agent with vs without MCP: three conditions, one mock API, DeepSeek V4"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.141.1",
+    "httpx>=0.28.1",
+    "mcp>=2.2.0",
+    "openai>=3.13.0",
+    "pyyaml>=6.0.3",
+    "uvicorn[standard]>=0.52.4",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.11.1",
+]

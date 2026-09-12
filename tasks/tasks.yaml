@@ -1,0 +1,59 @@
+# check.answer: normalised final reply must contain this string
+# check.state : python expr over `orders` (all) and `new` (orders created during the run)
+# drift: true  : also run under prompt_doc_stale / native_stale
+
+- id: e1
+  tier: easy
+  prompt: What is the total amount of order 1042?
+  check: {answer: "178"}
+- id: e2
+  tier: easy
+  prompt: What is the current status of order 1007?
+  check: {answer: "paid"}
+- id: e3
+  tier: easy
+  prompt: What is the unit price of the 27in Monitor?
+  check: {answer: "249"}
+
+- id: m1
+  tier: medium
+  drift: true
+  prompt: What is the total amount of all shipped orders of bob@example.com?
+  check: {answer: "2149"}
+- id: m2
+  tier: medium
+  prompt: How many orders in the whole store are currently in status shipped?
+  check: {answer: "34"}
+- id: m3
+  tier: medium
+  prompt: What is the sum of the totals of all shipped orders in the whole store?
+  check: {answer: "11979"}
+- id: m4
+  tier: medium
+  prompt: Which order has the highest total amount in the whole store? Reply with its ID.
+  check: {answer: "1045"}
+
+- id: h1
+  tier: hard
+  drift: true
+  prompt: Create an order for carol@example.com with 2 Mechanical Keyboards and 1 HDMI Cable 2m. Reply with the new order ID.
+  check: {state: "len(new) == 1 and new[0]['customer_id'] == 3 and sorted((i['sku'], i['qty']) for i in new[0]['items']) == [('CB-06', 1), ('KB-01', 2)]"}
+- id: h2
+  tier: hard
+  drift: true
+  prompt: Create an order for henry@example.com with one USB-C Dock and set its status to paid. Reply with the new order ID.
+  check: {state: "len(new) == 1 and new[0]['customer_id'] == 8 and new[0]['status'] == 'paid' and [(i['sku'], i['qty']) for i in new[0]['items']] == [('DK-05', 1)]"}
+- id: h3
+  tier: hard
+  drift: true
+  prompt: Mark every pending order of alice@example.com as paid. Reply with how many orders you updated.
+  check: {state: "all(o['status'] == 'paid' for o in orders if o['id'] in (1015, 1041, 1060)) and sum(o['status'] == 'paid' for o in orders) == 21 and not new"}
+- id: h4
+  tier: hard
+  drift: true
+  prompt: Cancel every pending order in the store whose total is greater than 300. Reply with the IDs you cancelled.
+  check: {state: "all(o['status'] == 'cancelled' for o in orders if o['id'] in (1011, 1015, 1026, 1033, 1041)) and sum(o['status'] == 'cancelled' for o in orders) == 17 and not new"}
+- id: h5
+  tier: hard
+  prompt: Cancel order 1042. If it cannot be cancelled, reply with the reason.
+  check: {answer: "shipped"}
